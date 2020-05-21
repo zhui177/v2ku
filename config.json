@@ -1,0 +1,27 @@
+{
+	"log": {
+		"loglevel": "warning"
+	},
+	"inbound": {
+		"port": "env:PORT",
+		"listen": "0.0.0.0",
+		"protocol": "vmess",
+		"settings": {
+			"clients": [ {"id": "7c0aceec-0c5d-4468-bf61-e22c65e9abbb",	"alterId": 16} ]
+		},
+		"streamSettings": {
+			"network": "ws",
+			"security": "auto",
+			"wsSettings": {
+				"path": "/elecV2"
+			}
+		}
+	},
+	"outbound": {
+		"protocol": "freedom",
+		"settings": {}
+	},
+	"dns": {
+		"servers": [ "176.103.130.130", "8.8.8.8", "1.1.1.1", "114.114.114.114"	]
+	}
+}
