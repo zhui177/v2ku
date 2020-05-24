@@ -3,7 +3,7 @@
 		"loglevel": "warning"
 	},
 	"inbound": {
-		"port": "env:PORT",
+		"port": "8251",
 		"listen": "0.0.0.0",
 		"protocol": "vmess",
 		"settings": {
