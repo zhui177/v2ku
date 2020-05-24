@@ -1,6 +1,10 @@
 echo ">> Run start"
 
-echo $V2RAY_CONFIG_JSON > config.json
+if [ $CONFIG != "" ]; then
+	rm -f 'config.json'
+	echo $CONFIG > config.json
+fi
+
 chmod +x ./v2ray
 chmod +x ./v2ctl
 ./v2ray
