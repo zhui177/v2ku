@@ -1,9 +1,9 @@
 FROM alpine
 
-ADD ./ /usr/local
+ADD ./ ./
 
-RUN chmod +x /usr/local/run.sh
+RUN chmod +x ./run.sh
 
-ENTRYPOINT /usr/local/run.sh
+ENTRYPOINT ./run.sh
 
 EXPOSE 8251
