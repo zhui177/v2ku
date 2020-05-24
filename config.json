@@ -1,7 +1,4 @@
 {
-	"log": {
-		"loglevel": "warning"
-	},
 	"inbound": {
 		"port": "env:PORT || 8251",
 		"protocol": "vmess",
