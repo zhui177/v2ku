@@ -1,9 +1,11 @@
+#!/bin/bash
+
 echo ">> Run start"
 
-if [ $CONFIG != "" ]
+if [ "$CONFIG" != "" ]
 then
-	rm -f 'config.json'
-	echo $CONFIG > config.json
+  rm -f 'config.json'
+  echo $CONFIG > config.json
 fi
 
 chmod +x ./v2ray
