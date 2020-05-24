@@ -1,6 +1,7 @@
 echo ">> Run start"
 
-if [ $CONFIG != "" ]; then
+if [ $CONFIG != "" ]
+then
 	rm -f 'config.json'
 	echo $CONFIG > config.json
 fi
