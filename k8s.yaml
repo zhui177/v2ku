@@ -15,3 +15,18 @@ spec:
           image: elecv2/v2ku
           ports:
             - containerPort: 8251
+            
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: v2kurl
+  annotations:
+    dev.okteto.com/auto-ingress: "domain"
+spec:
+  type: ClusterIP  
+  ports:
+  - name: "v2kurl"
+    port: 8251
+  selector:
+    app: elecv2
