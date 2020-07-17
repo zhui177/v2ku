@@ -22,7 +22,7 @@ kind: Service
 metadata:
   name: v2kurl
   annotations:
-    dev.okteto.com/auto-ingress: "domain"
+    dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
