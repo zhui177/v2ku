@@ -1,0 +1,10 @@
+services:
+  app:
+    public: true
+    image: elecv2/v2ku
+    replicas: 1
+    ports:
+      - 8251
+    resources:
+      cpu: 100m
+      memory: 128Mi

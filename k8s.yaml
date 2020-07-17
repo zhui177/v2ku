@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: elecv2
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: elecv2
+    spec:
+      restartPolicy: Always
+      containers:
+        - name: v2ku
+          image: elecv2/v2ku
+          ports:
+            - containerPort: 8251
