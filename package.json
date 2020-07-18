@@ -1,15 +1,12 @@
 {
   "name": "v2ku",
-  "version": "1.0.8",
-  "description": "a test doc",
+  "version": "1.2.0",
+  "description": "a simple v2ray docker",
   "main": "index.js",
-  "directories": {
-    "doc": "doc"
-  },
   "scripts": {
     "build": "chmod +x ./pre-run.sh && sh ./pre-run.sh",
     "start": "chmod +x ./run.sh ; sh ./run.sh"
   },
-  "author": "",
+  "author": "elecV2",
   "license": "ISC"
 }
