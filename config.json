@@ -1,5 +1,5 @@
 {
-	"inbound": {
+	"inbounds": [{
 		"port": "8251",
 		"protocol": "vmess",
 		"settings": {
@@ -12,12 +12,29 @@
 				"path": "/elecV2"
 			}
 		}
-	},
+	},{
+	   "port": 443,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "7c0aceec-0c5d-4468-bf61-e22c65e9abbb",
+                        "level": 0,
+                        "email": "love@v2fly.org"
+                    }
+                ],
+                "decryption": "none",
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "auto"
+            }
+	}],
 	"outbound": {
 		"protocol": "freedom",
 		"settings": {}
 	},
 	"dns": {
-		"servers": [ "176.103.130.130", "8.8.8.8", "1.1.1.1", "114.114.114.114"	]
+		"servers": [ "176.103.130.130", "8.8.8.8", "1.1.1.1", "114.114.114.114"]
 	}
 }
