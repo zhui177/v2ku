@@ -1,9 +1,12 @@
 {
     "inbounds": [{
-        "port": "8251",
+        "port": "443",
         "protocol": "vmess",
         "settings": {
-            "clients": [ {"id": "7c0aceec-0c5d-4468-bf61-e22c65e9abbb",	"alterId": 16} ]
+            "clients": [ {
+                "id": "7c0aceec-0c5d-4468-bf61-e22c65e9abbb",
+                "alterId": 16
+            } ]
         },
         "streamSettings": {
             "network": "ws",
@@ -11,21 +14,6 @@
             "wsSettings": {
                 "path": "/elecV2"
             }
-        }
-    },{
-        "port": 443,
-        "protocol": "vmess",
-        "settings": {
-            "clients": [{
-                "id": "7c0aceec-0c5d-4468-bf61-e22c65e9abbb",
-                "level": 0,
-                "email": "love@v2fly.org"
-            }],
-            "decryption": "none",
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "security": "auto"
         }
     }],
     "outbound": {
