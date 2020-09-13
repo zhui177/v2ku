@@ -6,7 +6,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: prometheus-server
+      app: elecv2
   template:
     metadata:
       labels:
