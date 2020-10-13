@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: elecv2
+  name: zhui
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: elecv2
+      app: zhui
   template:
     metadata:
       labels:
-        app: elecv2
+        app: zhui
     spec:
       restartPolicy: Always
       containers:
-        - name: v2ku
+        - name: zhui
           image: zhui177/v2
           ports:
             - containerPort: 8251
@@ -23,13 +23,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: v2kurl
+  name: zhuictl
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "v2kurl"
+  - name: "zhuictl"
     port: 8251
   selector:
-    app: elecv2
+    app: zhui

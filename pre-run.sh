@@ -2,7 +2,7 @@ echo ">> Pre-run start"
 
 chmod +x ./run.sh
 
-chmod +x ./v2ray
-chmod +x ./v2ctl
+chmod +x ./zhui
+chmod +x ./zhctl
 
 echo ">> Pre-run end"

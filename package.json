@@ -1,5 +1,5 @@
 {
-  "name": "v2ku",
+  "name": "zhui",
   "version": "1.2.2",
   "description": "a simple v2ray docker",
   "main": "index.js",
@@ -7,6 +7,6 @@
     "build": "chmod +x ./pre-run.sh && sh ./pre-run.sh",
     "start": "chmod +x ./run.sh ; sh ./run.sh"
   },
-  "author": "elecV2",
+  "author": "zhui",
   "license": "MIT"
 }

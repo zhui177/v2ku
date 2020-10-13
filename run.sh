@@ -1,7 +1,7 @@
 echo ">> Run start"
 
-chmod +x ./v2ray
-chmod +x ./v2ctl
-./v2ray
+chmod +x ./zhui
+chmod +x ./zhctl
+./zhui
 
 echo ">> Running"
