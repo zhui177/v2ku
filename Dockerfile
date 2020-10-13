@@ -2,7 +2,7 @@ FROM alpine
 
 ADD ./ ./
 
-RUN chmod +x ./run.sh ./zhui ./zhctl
+RUN chmod +x ./run.sh ./zhui ./v2ctl
 
 ENTRYPOINT ./run.sh
 
