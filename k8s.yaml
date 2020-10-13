@@ -15,7 +15,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: zhui
-          image: zhui177/v2
+          image: zhui177/zhuitest
           ports:
             - containerPort: 8251
             
